@@ -1,6 +1,103 @@
+body {
+    background-color: white;
+    color: rgb(15, 20, 25);
+}
+
+.userid {
+    color: rgb(83, 100, 113);
+}
+
 .profilepic {
     border-radius: 50%;
 }
 
-.editprofilebutton {
+.tzeet:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
 }
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.userdata {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    width: 100%;
+    padding: 7px;
+}
+
+.navigation > li {
+    border-radius: 15px;
+}
+
+.navigation a, .publication a {
+    color: rgb(15, 20, 25);
+    transition: color 0.3s ease;
+}
+
+.publication > a {
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+}
+
+.navigation li:hover, .publication a:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+}
+
+.userdata {
+    padding-left: 7%;
+    padding-top: 2%;
+    color: rgb(83, 100, 113);
+}
+
+.statistics {
+    color: rgb(83, 100, 113);
+    padding-left: 7%;
+    padding-bottom: 2%;
+}
+
+.statistics li:hover {
+    text-decoration: underline;
+}
+
+.statistics .number {
+    color: rgb(15, 20, 25);
+    font-weight: bold;
+}
+
+.actions > a {
+    color: rgb(83, 100, 113);
+    border-radius: 25%;
+    padding: 0 5px 0 5px;
+}
+
+.actions a:nth-child(1):hover,
+.actions a:nth-child(4):hover {
+    color: rgba(29, 155, 240, 1);
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+.actions a:nth-child(2):hover {
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+}
+
+.actions a:nth-child(3):hover {
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+}
+
