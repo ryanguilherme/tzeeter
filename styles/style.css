@@ -1,6 +1,15 @@
 body {
     background-color: white;
     color: rgb(15, 20, 25);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.tzeeter-icon {
+    margin-left: 15px;
 }
 
 .userid {
@@ -49,6 +58,73 @@ li {
     transition: color 0.3s ease;
 }
 
+.navigation {
+    flex: 1 1 10%;
+    padding: 15px;
+    height: 100vh;
+}
+
+.main-content {
+    flex: 2 1 40%;
+    padding: 15px;
+    min-height: 100vh;
+    border-right: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+}
+
+.social-field {
+    flex: 1 1 20%;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(239, 243, 244);
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.recommendation-section {
+    background-color: rgb(239, 243, 244);
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.recommendation {
+    padding: 10px;
+    align-items: center;
+}
+
+.recommendation-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.show-more {
+    font-size: 14px;
+    text-decoration: LinkText;
+}
+
 .publication > a {
     border-radius: 5px;
     padding: 0 5px 0 5px;
@@ -56,6 +132,33 @@ li {
 
 .navigation li:hover, .publication a:hover{
     background-color: rgba(15, 25, 20, 0.1);
+}
+
+.user-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.follow-btn {
+    background-color: #151595;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.follow-btn:hover {
+    background-color: #27279a;
 }
 
 .userdata {
