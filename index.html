@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<header id="mainheader">
+<header id="mainheader" class="navigation">
+    <img src="assets/tiziu.png" alt="tzeeter icon" class="tzeeter-icon">
     <ul class="navigation">
         <li><a href="https://www.popsci.com/wp-content/uploads/2021/11/16/luke-chesser-2Bdyxgz3OM0-unsplash-scaled.jpg?quality=85&w=2560">Home</a></li>
         <li><a href="https://www.algonquincollege.com/ac-social-media/files/2020/10/Search-Update.png">Explore</a></li>
@@ -18,7 +19,7 @@
         <li><a href="https://www.lifewire.com/thmb/Wd8BHPxL48d4x3FYJC1WwKsl0nA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TwitterMoreButton-11de53709efa47e3befdd383edf37bb2.jpg">More</a></li>
     </ul>
 </header>
-<main>
+<main class="main-content">
     <img class="profilepic" src="https://ryanguilherme.github.io/tzeeter/assets/arthurmorganpp.jpg" alt="Profile Picture">
     <h4 class="username">Arthur Morgan</h4>
     <h5 class="userid">@arthurmorgan</h5>
@@ -44,5 +45,39 @@
     </section>
     <section class="actions"><a href="#mainheader">Reply</a><a href="#mainheader">Retzeet</a><a href="#mainheader">Like</a><a href="#mainheader">Share</a></section>
 </main>
+<footer class="social-field">
+    <!-- Caixa de pesquisa -->
+    <div class="search-box">
+        <i class="search-icon"><img src="assets/search.svg" alt="bloom icon"></i>
+        <label>
+            <input type="text" placeholder="Username" class="search-input">
+        </label>
+    </div>
+
+    <!-- Seção de Recomendações -->
+    <div class="recommendation-section">
+        <h3 class="recommendation-title">Talvez você curta</h3>
+
+        <div class="recommendation">
+            <img src="assets/man-user-icon.png" alt="Carlos" class="user-icon">
+            <span class="user-name">Carlos</span>
+            <button class="follow-btn">Seguir</button>
+        </div>
+
+        <div class="recommendation">
+            <img src="assets/woman-user-icon.png" alt="Maria" class="user-icon">
+            <span class="user-name">Maria</span>
+            <button class="follow-btn">Seguir</button>
+        </div>
+
+        <div class="recommendation">
+            <img src="assets/woman-user-icon.png" alt="Ana" class="user-icon">
+            <span class="user-name">Ana</span>
+            <button class="follow-btn">Seguir</button>
+        </div>
+
+        <a href="#" class="show-more">Mostrar mais</a>
+    </div>
+</footer>
 </body>
 </html>
