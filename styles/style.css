@@ -40,6 +40,7 @@ body {
 .actions {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 10px;
 }
 
 .tzeet:hover {
@@ -97,7 +98,6 @@ li {
 .social-field {
     flex: 1 1 20%;
     padding: 15px;
-    border-radius: 40px;
 }
 
 .search-box {
@@ -144,7 +144,7 @@ li {
 
 .show-more {
     font-size: 14px;
-    text-decoration: LinkText;
+    padding: 10px;
 }
 
 .navigation li:hover, .publication a:hover{
@@ -172,6 +172,9 @@ li {
     padding: 8px 16px;
     cursor: pointer;
     font-size: 14px;
+    float: right;
+    margin-right: 35%;
+    margin-top: 20px;
 }
 
 .follow-btn:hover {
@@ -202,22 +205,41 @@ li {
 .actions > a {
     color: rgb(83, 100, 113);
     border-radius: 25%;
-    padding: 0 5px 0 5px;
 }
 
-.actions a:nth-child(1):hover,
-.actions a:nth-child(4):hover {
+.actions i {
+    padding: 10px;
+}
+
+.actions a:nth-child(1):hover i,
+.actions a:nth-child(4):hover i{
     color: rgba(29, 155, 240, 1);
     background-color: rgba(29, 155, 240, 0.1);
+    border-radius: 50%;
 }
 
-.actions a:nth-child(2):hover {
+.actions a:nth-child(1):hover span,
+.actions a:nth-child(4):hover span{
+    color: rgba(29, 155, 240, 1);
+}
+
+.actions a:nth-child(2):hover i{
     background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+    border-radius: 50%;
+}
+
+.actions a:nth-child(2):hover span{
     color: rgba(0, 186, 124, 1);
 }
 
-.actions a:nth-child(3):hover {
+.actions a:nth-child(3):hover i{
     background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+    border-radius: 50%;
+}
+
+.actions a:nth-child(3):hover span{
     color: rgba(249, 24, 128, 1);
 }
 
