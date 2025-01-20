@@ -20,6 +20,22 @@ body {
     border-radius: 50%;
 }
 
+button:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+.editprofilebutton {
+    margin-top: 50px;
+    padding: 7px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: #27279A;
+    font-family: sans-serif;
+    float: right;
+}
+
 .publication {
     display: flex;
     justify-content: space-between;
@@ -75,6 +91,7 @@ li {
 .navigation > li {
     border-radius: 15px;
     padding: 10px 0 10px 0;
+    margin-left: 10px;
 }
 
 .navigation a, .publication a {
@@ -84,7 +101,6 @@ li {
 
 .navigation {
     flex: 1 1 10%;
-    padding: 15px;
     height: 100vh;
 }
 
@@ -247,9 +263,13 @@ li {
 @media (max-width: 768px) {
     .navigation {
         flex: 1 1 5%;
+        align-items: center;
+    }
+    .tzeeter-icon {
+        margin: 0;
     }
     .main-content {
-        flex: 1 1 80%;
+        flex: 1 1 70%;
     }
     .social-field {
         display: none;
