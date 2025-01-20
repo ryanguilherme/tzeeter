@@ -81,6 +81,7 @@ ul {
     flex-direction: row;
     padding: 0;
     margin: 0;
+    color: rgb(83, 100, 113);
 }
 
 li {
@@ -198,16 +199,9 @@ li {
     background-color: #27279a;
 }
 
-.userdata {
-    padding-left: 7%;
-    padding-top: 2%;
-    color: rgb(83, 100, 113);
-}
-
 .statistics {
     color: rgb(83, 100, 113);
-    padding-left: 7%;
-    padding-bottom: 2%;
+    flex-direction: row;
 }
 
 .statistics li:hover {
@@ -264,6 +258,7 @@ li {
     .navigation {
         flex: 1 1 5%;
         align-items: center;
+        text-align: center;
     }
     .tzeeter-icon {
         margin: 0;
