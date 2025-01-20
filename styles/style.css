@@ -74,6 +74,7 @@ li {
 
 .navigation > li {
     border-radius: 15px;
+    padding: 10px 0 10px 0;
 }
 
 .navigation a, .publication a {
@@ -243,3 +244,17 @@ li {
     color: rgba(249, 24, 128, 1);
 }
 
+@media (max-width: 768px) {
+    .navigation {
+        flex: 1 1 5%;
+    }
+    .main-content {
+        flex: 1 1 80%;
+    }
+    .social-field {
+        display: none;
+    }
+    .navigation a span {
+        display: none;
+    }
+}
