@@ -6,6 +6,7 @@ body {
     gap: 20px;
     padding: 20px;
     font-family: sans-serif;
+    justify-content: center;
 }
 
 .tzeeter-icon {
@@ -127,11 +128,17 @@ li {
     min-height: 100vh;
     border-right: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
+    max-width: 600px;
 }
 
 .social-field {
+    display: flex;
+    position: relative;
+    flex-direction: column;
     flex: 1 1 20%;
     padding: 15px;
+    max-width: 300px;
+    overflow: hidden;
 }
 
 .search-box {
@@ -158,31 +165,41 @@ li {
 }
 
 .recommendation-section {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
     background-color: rgb(239, 243, 244);
     align-items: center;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
+    width: 93%;
+
 }
 
 .recommendation {
     display: flex;
+    position: relative;
     padding: 10px;
     align-items: center;
-    justify-content: flex-end;
     width: 100%;
 }
 
 .recommendation-title {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 15px;
-    margin-left: 10px;
+    margin-left: -80px;
 }
 
 .show-more {
     font-size: 14px;
     padding: 10px;
+    margin-right: auto;
+}
+
+.show-more:hover {
+    text-decoration: underline;
 }
 
 .navigation li:hover, .publication a:hover{
@@ -199,6 +216,7 @@ li {
     height: 48px;
     border-radius: 50%;
     object-fit: cover;
+    margin-left: 20px;
 }
 
 .user-name {
@@ -222,7 +240,7 @@ li {
     cursor: pointer;
     font-size: 14px;
     margin-left: auto;
-    margin-right: 35%;
+    margin-right: 20px;
     margin-top: 20px;
 }
 
@@ -308,4 +326,20 @@ li {
         display: none;
     }
 
+}
+
+@media (max-width: 968px) {
+    .recommendation-title {
+        padding-left: 70px;
+    }
+    .user-icon {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 832px) {
+    .user-icon {
+        display: none;
+    }
 }
