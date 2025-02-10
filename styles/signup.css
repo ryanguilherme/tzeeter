@@ -1,0 +1,116 @@
+body {
+    background-color: #9ac8c8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: helvetica;
+}
+
+.signup-section {
+    background-color: #fff;
+    max-width: 500px;
+    margin-top: calc(50vh - 350px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.signup-section input {
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.signup-section button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    background-color: #151595;
+}
+
+.signup-section button:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.birthdate h3 {
+    margin-top: -5px;
+}
+
+.birthdate p {
+    color: grey;
+    margin-top: -10px;
+}
+
+.date-input select, input[type="number"] {
+    width: 32%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.extra-emails {
+    width: 90%;
+    display: flex;
+}
+
+.email-checkbox {
+    width: 15px;
+    height: 15px;
+    margin-top: 20px;
+    margin-right: -175px;
+}
+
+.terms-buttons {
+    display: flex;
+}
+
+.terms-button input{
+    margin-right: 5px;
+}
+
+.extra-terms {
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+input.valid {
+    border-color: green;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+.input-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.input-icon i {
+    font-size: 16px;
+}
+
+.input-icon.valid i {
+    color: green;
+}
+
+.input-icon.invalid i {
+    color: red;
+}
