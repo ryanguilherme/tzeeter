@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tzeeter Cadastro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" href="assets/tiziu.png">
+  <link rel="stylesheet" href="styles/signup.css">
+</head>
+<body>
+<main class="signup-section">
+  <h2>Criar conta</h2>
+  <input id="user-name" class="user-name" type="text" placeholder="Nome: " required>
+  <input id="user-email" class="user-email" type="email" placeholder="Email: " required>
+  <input id="user-password" type="password" placeholder="Senha: " required minlength="6">
+  <input id="user-password-confirmation" type="password" placeholder="Confirmação da senha: " required minlength="6">
+  <div class="birthdate">
+    <h3>Data de nascimento</h3>
+    <p>Isso não será exibido publicamente. Confirme sua própria idade, mesmo se esta conta for de empresa, de um animal de estimação ou outros.</p>
+    <div class="date-input">
+      <select id="month" name="month" required>
+        <option value="">Mês</option>
+      </select>
+      <select id="day" name="day" required>
+        <option value="">Dia</option>
+      </select>
+      <select id="year" name="year" required>
+        <option value="">Ano</option>
+      </select>
+    </div>
+  </div>
+  <div class="extra">
+    <section class="extra-emails">
+      <p>Receba e-mails sobre sua atividade no Twitter e recomendações.</p>
+      <input type="checkbox" class="email-checkbox">
+    </section>
+    <section class="extra-terms">
+      <p>Você concorda com nossos Termos, com a Política de Privacidade e com o Uso de Cookies?</p>
+      <div class="terms-buttons">
+        <label for="radsim">
+          Sim
+          <input id="radsim" type="radio" name="terms" value="Sim">
+        </label>
+        <label for="radnao">
+          Não
+          <input id="radnao" type="radio" name="terms" value="Não">
+        </label>
+      </div>
+    </section>
+  </div>
+
+  <button id="submit-button" type="submit" class="signin-button" disabled>Se inscrever</button>
+</main>
+<script src="scripts/script.js"></script>
+</body>
+</html>
