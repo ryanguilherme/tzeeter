@@ -17,7 +17,7 @@
         <li><a href="https://www.axiapr.com/hs-fs/hubfs/blog-files/turn%20off%20notifications%201.png?width=624&height=356&name=turn%20off%20notifications%201.png"><i class="bi bi-envelope"></i> <span>Messages</span></a></li>
         <li><a href="#mainheader"><i class="bi bi-person-fill"></i> <span>Profile</span></a></li>
         <li><a href="https://www.lifewire.com/thmb/Wd8BHPxL48d4x3FYJC1WwKsl0nA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TwitterMoreButton-11de53709efa47e3befdd383edf37bb2.jpg"><i class="bi bi-three-dots"></i> <span>More</span></a></li>
-        <li class="tweet-button"><button><i class="bi bi-chat"></i> <span>Tweet</span></button></li>
+        <li class="tweet-button" id="tweet-button"><button><i class="bi bi-chat"></i> <span>Tweet</span></button></li>
     </ul>
 </header>
 <main class="main-content">
@@ -89,6 +89,34 @@
 
         <a href="#" class="show-more">Mostrar mais</a>
     </div>
+    <dialog id="post-dialog" class="post-dialog">
+        <div class="post-area">
+            <a id="close-button"><i class="bi bi-x-lg"></i></a>
+            <img class="profilepic" src="https://ryanguilherme.github.io/tzeeter/assets/arthurmorganpp.jpg" alt="Profile Picture">
+            <div class="post-content">
+                <label for="user-post-dialog"></label>
+                <textarea id="user-post-dialog" name="user-post" rows="1" cols="40" placeholder="O que você está pensando"></textarea>
+                <a href="#" class="reply-config"><i class="bi bi-globe"></i> Everyone can reply</a>
+                <hr>
+                <div class="bottom-section">
+                    <div class="multimedia">
+                        <a><i class="bi bi-card-image"></i></a>
+                        <a><i class="bi bi-filetype-gif"></i></a>
+                        <a><i class="bi bi-emoji-smile"></i></a>
+                        <a><i class="bi bi-bar-chart"></i></a>
+                        <a><i class="bi bi-calendar-event"></i></a>
+                        <a><i class="bi bi-geo-alt"></i></a>
+                    </div>
+                    <div class="send-area">
+                        <span id="char-counter-dialog" class="hidden">140</span>
+                        <span class="separator">|</span>
+                        <a><i class="bi bi-plus-circle"></i></a>
+                        <button type="submit" class="post-button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
 </footer>
 <script src="scripts/main.js"></script>
 </body>
