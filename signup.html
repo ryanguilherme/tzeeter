@@ -10,15 +10,19 @@
 <body>
 <main class="signup-section">
   <h2>Criar conta</h2>
-  <form>
+  <form novalidate>
     <label for="user-name"></label>
     <input id="user-name" class="user-name" type="text" placeholder="Nome: " required>
+    <span class="error" aria-live="polite"></span>
     <label for="user-email"></label>
     <input id="user-email" class="user-email" type="email" placeholder="Email: " required>
+    <span class="error" aria-live="polite"></span>
     <label for="user-password"></label>
     <input id="user-password" type="password" placeholder="Senha: " required minlength="6">
+    <span class="error" aria-live="polite"></span>
     <label for="user-password-confirm"></label>
     <input id="user-password-confirm" type="password" placeholder="Confirmação da senha: " required minlength="6">
+    <span class="error" aria-live="polite"></span>
     <div class="birthdate">
       <h3>Data de nascimento</h3>
       <p>Isso não será exibido publicamente. Confirme sua própria idade, mesmo se esta conta for de empresa, de um animal de estimação ou outros.</p>
