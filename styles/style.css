@@ -422,6 +422,18 @@ hr {
     color: rgb(255, 0, 0);
 }
 
+#char-counter-dialog {
+    font-size: 14px;
+}
+
+#char-counter-dialog.warning {
+    color: rgb(255, 200, 0);
+}
+
+#char-counter-dialog.error {
+    color: rgb(255, 0, 0);
+}
+
 .hidden {
     display: none;
 }
@@ -434,4 +446,12 @@ hr {
 .post-button:disabled {
     cursor: not-allowed;
     opacity: 0.6;
+}
+
+.post-dialog {
+    border: none;
+    width: 50%;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 2px 8px #ccc;
 }
