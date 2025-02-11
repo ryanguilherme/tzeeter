@@ -120,6 +120,7 @@ li {
     background-color: #151595;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .main-content {
