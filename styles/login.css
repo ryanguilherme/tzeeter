@@ -56,3 +56,10 @@ input:valid {
 input:invalid {
     border-color: red;
 }
+
+.error {
+    display: block;
+    color: red;
+    padding-bottom: 10px;
+    margin-top: -10px;
+}
