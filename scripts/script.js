@@ -36,7 +36,6 @@ function generateYears() {
     }
 }
 
-
 function init() {
     generateDays();
     generateMonths();
@@ -44,3 +43,77 @@ function init() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
+const form = document.querySelector('form');
+const name = document.querySelector('.user-name');
+const nameError = document.querySelector("#user-name + span.error");
+const email = document.querySelector(".user-email");
+const emailError = document.querySelector('#user-email + span.error');
+const password = document.querySelector(".user-password");
+const passwordError = document.querySelector("#user-password + span.error");
+const passwordConfirm = document.querySelector(".user-password-confirm");
+const passwordConfirmError = document.querySelector("#user-password-confirm + span.error");
+
+
+email.addEventListener('input', (event) => {
+    if (email.validity.valid) {
+        emailError.textContent = "";
+        emailError.className = "error";
+    } else {
+        showError("email");
+    }
+    if (name.validity.valid) {
+        nameError.textContent = "";
+        nameError.className = "error";
+    } else {
+        showError("name");
+    }
+    if (password.validity.valid && passwordConfirm.validity.valid) {
+        passwordError.textContent = "";
+        passwordConfirmError.textContent = "";
+        passwordError.className = "error";
+        passwordConfirmError.className = "error";
+    } else {
+        showError("password");
+    }
+})
+
+form.addEventListener('submit', (event) => {
+    if (!name.validity.valid) {
+        showError("name");
+        event.preventDefault();
+    }
+    if (!password.validity.valid || passwordConfirm.validity.valid) {
+        showError("password");
+        event.preventDefault();
+    }
+    if (!email.validity.valid) {
+        showError("email");
+        event.preventDefault();
+    }
+})
+
+function showError(type) {
+    if (type === "name") {
+        nameError.textContent = "Por favor, informe um nome de usuário.";
+    }
+    if (type === "email") {
+        emailError.textContent = "Informe um email válido.";
+    }
+    if (type === "password") {
+        passwordError.textContent = "A senha é obrigatória e deve ter pelo menos 6 caracteres";
+        passwordConfirmError.textContent= "A senha é obrigatória e deve ter pelo menos 6 caracteres";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
