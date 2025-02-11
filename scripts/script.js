@@ -53,6 +53,14 @@ const password = document.querySelector(".user-password");
 const passwordError = document.querySelector("#user-password + span.error");
 const passwordConfirm = document.querySelector(".user-password-confirm");
 const passwordConfirmError = document.querySelector("#user-password-confirm + span.error");
+const acceptTerms = document.getElementById("radsim");
+const acceptTermsError = document.querySelector("#terms-buttons + span.error");
+const month = document.getElementById("month");
+const monthError = document.querySelector("#month + span.error");
+const day = document.getElementById("day");
+const dayError = document.querySelector("#day + span.error");
+const year = document.getElementById("year");
+const yearError = document.querySelector("#year + span.error");
 
 
 email.addEventListener('input', (event) => {
@@ -76,6 +84,18 @@ email.addEventListener('input', (event) => {
     } else {
         showError("password");
     }
+    if (acceptTerms.checked) {
+        acceptTermsError.textContent = "";
+        acceptTermsError.className = "error";
+    } else {
+        showError("terms");
+    }
+    if (month.value) {
+        monthError.textContent = "";
+        monthError.className = "error";
+    } else {
+        showError("date-month");
+    }
 })
 
 form.addEventListener('submit', (event) => {
@@ -83,7 +103,7 @@ form.addEventListener('submit', (event) => {
         showError("name");
         event.preventDefault();
     }
-    if (!password.validity.valid || passwordConfirm.validity.valid) {
+    if (!password.validity.valid || !passwordConfirm.validity.valid) {
         showError("password");
         event.preventDefault();
     }
@@ -91,6 +111,15 @@ form.addEventListener('submit', (event) => {
         showError("email");
         event.preventDefault();
     }
+    if (!acceptTerms.checked) {
+        showError("terms");
+        event.preventDefault();
+    }
+    if (!month.value || !day.value || !year.value) {
+        showError("date");
+        event.preventDefault();
+    }
+
 })
 
 function showError(type) {
@@ -103,6 +132,12 @@ function showError(type) {
     if (type === "password") {
         passwordError.textContent = "A senha é obrigatória e deve ter pelo menos 6 caracteres";
         passwordConfirmError.textContent= "A senha é obrigatória e deve ter pelo menos 6 caracteres";
+    }
+    if (type === "terms") {
+        acceptTermsError.textContent = "Você deve concordar com nossos termos para se inscrever.";
+    }
+    if (type === "date") {
+        yearError.textContent = "Forneça uma data válida.";
     }
 }
 
