@@ -9,19 +9,22 @@
 </head>
 <body>
 <div class="login-section">
-    <form>
+    <form novalidate>
         <div class="tzeeter-logo-section">
             <img src="assets/tiziu.png" alt="Logo do Tzeeter">
         </div>
         <h2>Entre no Tzeet agora mesmo</h2>
         <label for="user-email">Email:</label>
         <input id="user-email" class="user-email" type="email" placeholder="Digite seu email: " required>
+        <span class="error" aria-live="polite"></span>
         <label for="user-password">Senha:</label>
         <input id="user-password" class="user-password" type="password" placeholder="Digite sua senha: " required>
+        <span class="error" aria-live="polite"></span>
         <a href="#">Esqueceu a senha?</a>
         <button type="submit" class="login-button">Entrar</button>
         <span>Não tem uma conta? </span><a href="signup.html">Inscreva-se</a>
     </form>
 </div>
+<script src="scripts/login.js"></script>
 </body>
 </html>
