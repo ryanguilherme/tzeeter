@@ -399,9 +399,39 @@ li {
     border-radius: 50%;
 }
 
+.send-area button {
+    margin-left: 10px;
+}
+
 hr {
     border: none;
     height: 1px;
     background-color: #c1c1c1;
     width: 100%;
+}
+
+#char-counter {
+    font-size: 14px;
+}
+
+#char-counter.warning {
+    color: rgb(255, 200, 0);
+}
+
+#char-counter.error {
+    color: rgb(255, 0, 0);
+}
+
+.hidden {
+    display: none;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #888;
+}
+
+.post-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
 }
