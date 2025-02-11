@@ -18,10 +18,10 @@
     <input id="user-email" class="user-email" type="email" placeholder="Email: " required>
     <span class="error" aria-live="polite"></span>
     <label for="user-password"></label>
-    <input id="user-password" type="password" placeholder="Senha: " required minlength="6">
+    <input id="user-password" class="user-password" type="password" placeholder="Senha: " required minlength="6">
     <span class="error" aria-live="polite"></span>
     <label for="user-password-confirm"></label>
-    <input id="user-password-confirm" type="password" placeholder="Confirmação da senha: " required minlength="6">
+    <input id="user-password-confirm" class="user-password-confirm" type="password" placeholder="Confirmação da senha: " required minlength="6">
     <span class="error" aria-live="polite"></span>
     <div class="birthdate">
       <h3>Data de nascimento</h3>
@@ -30,12 +30,15 @@
         <select id="month" name="month" required>
           <option value="">Mês</option>
         </select>
+        <span class="error" aria-live="polite"></span>
         <select id="day" name="day" required>
           <option value="">Dia</option>
         </select>
+        <span class="error" aria-live="polite"></span>
         <select id="year" name="year" required>
           <option value="">Ano</option>
         </select>
+        <span class="error" aria-live="polite"></span>
       </div>
     </div>
     <div class="extra">
@@ -45,7 +48,7 @@
       </section>
       <section class="extra-terms">
         <p>Você concorda com nossos Termos, com a Política de Privacidade e com o Uso de Cookies?</p>
-        <div class="terms-buttons">
+        <div class="terms-buttons" id="terms-buttons">
           <label for="radsim">
             Sim
             <input id="radsim" type="radio" name="terms" value="Sim" required>
@@ -55,6 +58,7 @@
             <input id="radnao" type="radio" name="terms" value="Não">
           </label>
         </div>
+        <span class="error" aria-live="polite"></span>
       </section>
     </div>
 
