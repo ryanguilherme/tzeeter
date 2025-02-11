@@ -343,3 +343,65 @@ li {
         display: none;
     }
 }
+
+.post-area {
+    padding-top: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 575px;
+    padding-bottom: 10px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.post-area textarea {
+    font-family: helvetica, serif;
+    font-size: 20px;
+    border: none;
+    resize: none;
+    padding-bottom: 10px;
+}
+
+.post-area .reply-config {
+    color: #151595;
+}
+
+.post-area a {
+    cursor: pointer;
+}
+
+.post-area .post-button {
+    background-color: #151595;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 7vh;
+    height: 3vh;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.multimedia a {
+    margin-right: 10px;
+}
+
+.bottom-section a:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    border-radius: 50%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #c1c1c1;
+    width: 100%;
+}
